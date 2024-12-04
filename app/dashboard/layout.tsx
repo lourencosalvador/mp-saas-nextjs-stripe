@@ -10,9 +10,9 @@ export default async function DashboardLayout({
   const session = await auth();
   const userName = session?.user?.name;
 
-  if (!session) {
-    redirect('/login');
-  }
+  // if (!session) {
+  //   redirect('/login');
+  // }
 
   return (
     <div className="min-h-screen bg-gray-100">
